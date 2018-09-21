@@ -1,0 +1,5 @@
+前提： 目标确保目录下没有 node_modules文件夹， 如果有，请删除
+1. cd 目录
+2. npm install
+3. 安装插件element-ui     npm i element-ui -S
+4. 安装插件 axios     npm install axios

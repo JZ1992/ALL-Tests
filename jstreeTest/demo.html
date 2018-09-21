@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>树形结构异步加载子节点</title>
+    <link href="themes/default/style.min.css" rel="stylesheet" media="screen" type="text/css" />
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jstree.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="treeArea" style="margin:0 auto; width:900px;height:900px;    background: rgba(200, 20, 30, 0.1);">
+
+        </div>
+
+
+
+        <script type="text/javascript">
+            $(function () {
+                $('.treeArea').jstree({
+                    // 'plugins': ["checkbox", "state"],
+                    'core': {
+                        'data': [{
+                            "id": "root",
+                            "text": "根节点",
+                            "children": [{ //创建一个子节点  
+                                "text": "子节点1",
+                                "id": "child1"
+                            }]
+                        }],
+                        'check_callback': true
+                    }
+                });
+            });
+
+            var count = 0;
+            $('.treeArea').on('activate_node.jstree', function (e, data) {
+                createNode('#' + data.node.id, "child" + count++, "子节点2" + Math.random(), "last"); //在最后插入  
+            });
+
+            function createNode(parent_node, new_node_id, new_node_text, position) {
+                // 创建节点
+                // position：first / last
+                $('.treeArea').jstree('create_node', $(parent_node), {
+                    "text": new_node_text,
+                    "id": new_node_id
+                }, position);
+            }
+        </script>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
