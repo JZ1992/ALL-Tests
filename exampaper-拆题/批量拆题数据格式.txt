@@ -1,0 +1,499 @@
+选择题：
+[{
+	"index": 1,
+	"title": "( ??)1. The island is two miles <u>　　　　</u>?the coast of Scotland. \n",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " on ? "
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " off ? ?"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " for ??"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 2,
+	"title": "( ??)2. — Is Australia a(n) <u>　　　　</u>?country?\n??— Yes, but people speak English in their own way. \n",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " glish-speaking  "
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " speaking-glish ????"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " glish-spoken"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"2": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 3,
+	"title": "( ??)3. <u>　　　　</u>?his diary, he has been to France and Italy.\n",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " anks to ?"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " stead of ? "
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " cording to"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"3": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}]
+
+
+填空题：
+[{
+	"index": 46,
+	"title": "46. The plastic bag has been <u>　　　　　</u>(禁止) since June 1st, 2008.",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": "",
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 47,
+	"title": "47. The <u>　　　　　</u>(厨师) who work? ?<u>　　　　</u> ?for the school should be well-trained.",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": "",
+			"addanswer": "",
+			"is_obj": 1
+		},
+		"2": {
+			"answer": "",
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 48,
+	"title": "48. Mum, the cake is very <u>　　　　　</u>(好吃的).",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": "",
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}]
+
+
+判断题：
+[{
+	"index": 52,
+	"title": "52. ( )Don’t add too much?to the milk?",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "对",
+				"content": ""
+			}, {
+				"order": 2,
+				"optionno": "错",
+				"content": ""
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 53,
+	"title": "53. ( )My stomach often ?",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "对",
+				"content": ""
+			}, {
+				"order": 2,
+				"optionno": "错",
+				"content": ""
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 54,
+	"title": "54. ( )You are too thin and need to put on ?",
+	"sm_topic": {
+		"1": {
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "对",
+				"content": ""
+			}, {
+				"order": 2,
+				"optionno": "错",
+				"content": ""
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}]
+
+
+完形填空
+[{
+	"index": 0,
+	"title": "Mrs Scott is a mother of two girls. She doesn’t go out for work. But she is very <u>???</u><u>11</u><u>???</u>?taking care of children and doing <u>???</u><u>12</u><u>???</u>?at home every day. Her husband, Mr Scott, works in a big company. He always?<u>???</u><u>13</u><u>???</u>?home early and returns late. He is hard-working, so he often feels<u>???</u><u>14</u><u>???</u>.\nOne day, Mrs Scott said to Mr Scott, “We are so busy every day that we should <u>???</u><u>15</u><u>???</u>.” So they made a decision to go somewhere for a <u>???</u><u>16</u><u>???</u>. They then discussed <u>???</u><u>17</u><u>???</u>?to go. But soon they argued, because Mr Scott wanted to go to the <u>???</u><u>18</u><u>???</u>, while Mrs Scott thought there was plenty of?<u>???</u><u>19</u><u>???</u>?in summer and mountain climbing would make <u>???</u><u>20</u><u>???</u>?in danger. At last, they agreed to go to the seaside.\nBut they <u>???</u><u>21</u><u>???</u>?with each other again. Mr Scott loved to travel by plane while Mrs Scott <u>???</u><u>22</u><u>???</u>?flying. She said she would feel nervous on a plane. She would rather take a train. <u>???</u><u>23</u><u>???</u>, they decided to go to the seaside <u>???</u><u>24</u><u>???</u>?and fly back. So Mr Scott went to the station and bought the <u>???</u><u>25</u><u>???</u>.\n",
+	"sm_topic": {
+		"1": {
+			"index": "11",
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " busy ???????? ?"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " happy ???????? ?"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " relaxed"
+			}],
+			"type": 22,
+			"details": ""
+		},
+		"2": {
+			"index": "12",
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " shopping ???? ? "
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " housework ???? ?"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " exercise"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		},
+		"2": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 1,
+	"title": "There was a farmer who owned some land along the sea. He advertised for workers, but no one wanted to work for him. Most people didn’t want to work there <u>　</u><u>1</u><u>1</u><u>　</u>?they didn’t like the bad storms. Finally, a <u>　</u><u>1</u><u>2</u><u>　</u>?man, who looked weak and more than fifty years old, came to see the farmer. “Are you a good farmhand?” the farmer asked him.\n“Well, I <u>　</u><u>1</u><u>3</u><u>　</u>?sleep well when the wind blows,” answered the little man.\nAlthough the answer was strange, the farmer let the man stay to work. The little man worked <u>　</u><u>1</u><u>4</u><u>　</u>?around the farm, busy from morning till evening. The farmer felt very pleased with his work.\nThen one night the wind began to blow strongly. Jumping out of the bed, the farmer <u>　</u><u>1</u><u>5</u><u>　</u>?into the little man’s room. He shook the little man and cried, “Get up! A <u>　</u><u>1</u><u>6</u><u>　</u>?is coming!”\nThe little man said slowly, “No sir, I told you — I can <u>　</u><u>1</u><u>7</u><u>　</u>?well when the wind blows.”\nThe farmer was very <u>　</u><u>1</u><u>8</u><u>　</u>, but he had to hurry outside to get ready for the storm. To his surprise, everything was ready outside.?<u>　</u><u>1</u><u>9</u><u>　</u>?could be blown away.\nThe farmer <u>　</u><u>2</u><u>0</u><u>　</u>?what the man meant, so he returned to his bed to sleep while the wind was still blowing.\n",
+	"sm_topic": {
+		"1": {
+			"index": "25",
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " so ?"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " but ? "
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " because "
+			}, {
+				"order": 4,
+				"optionno": "D",
+				"content": " although"
+			}],
+			"type": 22,
+			"details": ""
+		},
+		"2": {
+			"index": "26",
+			"title": "",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " big ?"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " little ? "
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " young ?"
+			}, {
+				"order": 4,
+				"optionno": "D",
+				"content": " strong "
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		},
+		"2": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}]
+
+阅读理解：
+[{
+	"index": 0,
+	"title": "A\nOnce there was a boy. He loved sweets very much. He always asked his father for sweets.\nThe boy’s father thought hard about how to stop the boy from asking for so many sweets. A great man lived nearby. The boy’s father decided to take the boy to him. He might be able to make the boy give up sweets.\nSo they went to the great man. The father asked the great man to help him. But the great man liked sweets himself. He told the father to bring his son back after a month.\nDuring the month, the great man tried to give up eating sweets. At last he did it. When the boy and his father returned after a month, the great man had a talk with the boy. From then on, the boy did not ask for sweets any more.\nThe boy’s father felt surprised and asked, “Why didn’t you ask my son to give up sweets when we visited you a month ago?” The man answered, “How could I ask a boy to give up sweets when I loved sweets myself? In the last month I gave up eating sweets.”\nA person’s example is always stronger than words. We should not ask others to do what we can’t do ourselves.\n",
+	"sm_topic": {
+		"1": {
+			"index": "26",
+			"title": "( ??)26. The boy’s father took the boy to the great man because?<u>　　　　</u>.",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " the great man was his good friend"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " the great man had plenty of sweets"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " the great man might give him some help"
+			}, {
+				"order": 4,
+				"optionno": "D",
+				"content": " the great man lived close to his house"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, {
+	"index": 1,
+	"title": "B\nIf you go to a fast-food restaurant, you will probably see a lot of teenagers. Today, many teenagers are overweight, and some of this is because of their bad eating habits. Most teenagers love food with a lot of fat, oil, salt, and sugar. People often call this kind of food “junk food”.\nBut bad eating habits go beyond fast food. We find many teenagers eat unhealthily. Some don’t have breakfast before they go to school. During the day, some don’t have a proper meal for lunch. In a recent survey at one school, scientists found that over two thirds of the students didn’t follow a healthy diet. They didn’t like vegetables, and many of them didn’t like to eat fruit. They preferred to eat food with a lot of salt, sugar, and fat.\nParents today also worry about their children’s diet. Some doctors give the following advice:\n★?Teenagers shouldn’t eat too much junk food.\n★?Teenagers shouldn’t eat food with too much salt. Salt can cause high blood pressure in the future.\n★?Teenagers should eat food with less fat, oil and sugar.\n★?Teenagers need to eat some fruit and vegetables every day. Fruit and vegetables are rich in?vitamins?(维生素) and have little fat.\n★?Teenagers need to drink more milk. Milk will help their bones grow.\n★?Teenagers need to eat breakfast every day. This is good for their body and mind.\n",
+	"sm_topic": {
+		"1": {
+			"index": "31",
+			"title": "( ??)31. According to the passage, junk food contains a lot of?<u>　　　　</u>.",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " fat, sugar and water ?????????"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " fat, oil, salt and sugar"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " vitamins, fat and salt ??????????"
+			}, {
+				"order": 4,
+				"optionno": "D",
+				"content": " vitamins, salt and sugar"
+			}],
+			"type": 22,
+			"details": ""
+		},
+		"2": {
+			"index": "32",
+			"title": "( ??)32. In a recent survey at one school, scientists found many students liked?<u>　　　　</u>.",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": " vegetables ????? ??"
+			}, {
+				"order": 2,
+				"optionno": "B",
+				"content": " unhealthy food ???"
+			}, {
+				"order": 3,
+				"optionno": "C",
+				"content": " fruit ?????? ? ?"
+			}, {
+				"order": 4,
+				"optionno": "D",
+				"content": " healthy food"
+			}],
+			"type": 22,
+			"details": ""
+		}
+	},
+	"types": 22,
+	"answer": {
+		"1": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		},
+		"2": {
+			"answer": [1],
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}]

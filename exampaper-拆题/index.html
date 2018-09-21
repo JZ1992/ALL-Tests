@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>前端拆题</title>
+	<link href="style/default.css" rel="stylesheet" media="screen" type="text/css" />
+	<script type="text/javascript" src="jmeditor/jquery-1.8.3.min.js"></script>
+
+	<!-- jm-editor -->
+	<script type="text/javascript" src="jmeditor/JMEditor.js"></script>
+
+
+
+	<!--    UEditor编辑器-->
+	<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/ueditor/ueditor.all.js">
+	</script>
+	<!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+	<!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+	<script type="text/javascript" charset="utf-8" src="/ueditor/lang/zh-cn/zh-cn.js"></script>
+	<!-- //公式编辑器 -->
+	<script type="text/javascript" charset="utf-8" src="/ueditor/kityformula-plugin/addKityFormulaDialog.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/ueditor/kityformula-plugin/getKfContent.js"></script>
+	<script type="text/javascript" charset="utf-8" src="/ueditor/kityformula-plugin/defaultFilterFix.js"></script>
+
+
+	<!-- <script type="text/javascript" src="separate.js"></script> -->
+	<script type="text/javascript" src="separateV2.js"></script>
+</head>
+
+<!-- ueditor -->
+
+<body style="background: #f4f4f4;">
+	<style>
+		#ueditor {
+			margin: 0 auto;
+			width: 1000px;
+			height: 600px;
+			/* transform: translateY(-50%);
+			top:50%; */
+			/* position: absolute;
+			top: 50%;
+			left: 50%; */
+		    /* animation: fadeinB 2s 3; */
+			/* -moz-animation: fadeinB 2s 3; */ 
+			/*Firefox*/
+			/* -webkit-animation: fadeinB 2s 3; */
+			/*Safari and Chrome*/
+		}
+
+
+		.amiTest {
+			animation-name: fadeinB 4s 3;
+			-webkit-animation: fadeinB 4s 3;
+		}
+
+		.zmbtn {
+			margin: 5px 10px;
+			padding: 5px 10px;
+			line-height: 40px;
+			border-radius: 5px;
+			border: 1px solid gray;
+			cursor: pointer;
+			color: #fff;
+			background: gray;
+			display: inline-block;
+		}
+
+		.zmbtn:hover {
+			opacity: 0.8;
+		}
+
+
+		/* 淡入-从下 */
+
+		@-webkit-keyframes fadeinB {
+			0% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+				top: 500px;
+			}
+		}
+
+		 /* @-moz-keyframes fadeinB {
+			0% {
+				opacity: 0;
+				-moz-transform: translateY(100px);
+			}
+			100% {
+				opacity: 1;
+				-moz-transform: translateY(0);
+			}
+		}
+
+		@-ms-keyframes fadeinB {
+			0% {
+				opacity: 0;
+				-ms-transform: translateY(100px);
+			}
+			100% {
+				opacity: 1;
+				-ms-transform: translateY(0);
+			}
+		} */
+
+		@keyframes fadeinB {
+			0% {
+				opacity: 0;
+				transform: translateY(100px);
+			}
+			100% {
+				opacity: 0;
+				transform: translateY(0);
+			} 
+		}
+
+	</style>
+	<div id='ueditor'>
+	</div>
+	<buttton class='zmbtn choiceQuestion'>1. 选择题拆题</buttton>
+	<br>
+	<buttton class='zmbtn '>2. 填空题拆题</buttton>
+	<script>
+		UE.getEditor('ueditor');
+
+		//选择题
+		$('.choiceQuestion').click(function () {
+			var obj = separateTestQuestion({
+				tplId: 1,
+				typeId: 5,
+				html: UE.getEditor('ueditor').getContent()
+			});
+			console.log(obj);
+		});
+	</script>
+</body>
+
+
+
+
+<!-- jm-eidtor -->
+<!-- <body>
+	<div class="container">
+		<div class="notice" id="chromeNotice">
+			<div>
+				提示：使用Chrome浏览器，此示例需要运行在http协议下才能正常工作。
+			</div>
+		</div>
+		<div class="body">
+			<div class="content">
+				<h1>JMEditor示例</h1>
+				<p>
+					下面是JMEditor在线公式编辑器，集成了公式编辑插件 ∑ ，赶紧体验一下吧。
+				</p>
+				<p>
+					<div id="content" contentEditable="true" class="editDemo hasPBlock" style="width:670px;">
+						编辑框一
+					</div>
+				</p>
+				<p>
+					<input type="button" onclick="alert(JMEditor.isEmpty('content'));" value="判断是否为空">
+					<input type="button" onclick="$('.contentArea').val(JMEditor.html('content'));" value="取值">
+					<div>【类型拆题：】
+						<br>
+					</div>
+					<br>
+					<input type="button" class="choiceQuestion" value="1.选择题拆题">
+					<input type="button" class="fillQuestion" value="2.填空题拆题">
+					<input type="button" class="judgeQuestion" value="3.判断题拆题">
+					<input type="button" class="clozeQuestion" value="4.完形拆题">
+					<input type="button" class="readingQuestion" value="5.阅读理解【只针对选择题类型】">
+					<button class="addE">fuck</button>
+				</p>
+			</div>
+
+			<div id="zm" style="width:670px;">
+				编辑框safsdafsda一
+			</div>
+			<script>
+				var count = 0;
+				$('.addE').click(function () {
+					var $id = 'id' + count++;
+					$('.content').append($('<div id="' + $id + '" style="width:500px;height:200px;border:1px solid black;"></div>'));
+					var editor = JMEditor.ckEditor.inline($id);//渲染id='content'的div
+					document.getElementById($id).contentEditable = true;//可编辑
+
+
+					//change事件
+					CKEDITOR.instances[$id].on('mode', function () {
+						if (this.mode == 'wysiwyg') {
+							var editable = CKEDITOR.instances[$id].editable();
+							editable.attachListener(editable, 'input', function () {
+								// Handle changes made in the source mode.
+								console.log(33);
+							});
+						}
+					});
+
+				})
+
+			</script>
+		</div>
+
+	</div>
+</body> -->
+
+</html>

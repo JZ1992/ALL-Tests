@@ -1,0 +1,160 @@
+// 选择题
+[{
+	"title": "",
+	"sm_topic": {
+		"1": {
+			"title": "<p>1���</p>",
+			"options": [{
+				"order": 1,
+				"optionno": "A",
+				"content": "<p>A'A'AAAAAAAA</p>",
+				"vForKey": 16
+			...],
+			"type": type,
+			"details": ""
+		}
+	},
+	"types": type,
+	"answer": {
+		"1": {
+			"answer": [0], //不定义正确答案
+			"addanswer": "",
+			"is_obj": 1
+		}
+	},
+	"details": "",
+	"id": ""
+}, ...]
+
+
+// 填空题
+[{
+	"title": "",
+	"sm_topic": {
+		"1": {
+			"title": "<p>1���</p>",
+			"options": [],
+			"type": type,
+			"details": ""
+		}
+	},
+	"types": type,
+	"answer": {
+		//多个空
+		"1": {
+			"answer": '',
+			"addanswer": "",
+			"is_obj": 1
+		},
+		"2": {
+			"answer": '',
+			"addanswer": "",
+			"is_obj": 1
+		},
+
+	},
+	"details": "",
+	"id": ""
+}, ...]
+
+
+// 判断题
+[
+	{
+		"title": "",
+		"sm_topic": {
+			"1": {
+				"title": "<p>1���</p>",
+				"options": [...],
+				"type": type,
+				"details": ""
+			}
+		},
+		"types": type,
+		"answer": {
+			"1": {
+				"answer": [0], //不定义正确答案
+				"addanswer": "",
+				"is_obj": 1
+			}
+		},
+		"details": "",
+		"id": ""
+	}
+]
+
+
+// 完形填空
+[
+	{
+		"title": "XXXXXXXXXXXX",
+		"sm_topic": {
+			"1": {
+				"title": "",
+				"options": [...],
+				"type": type,
+				"details": ""
+			},
+			"1": {
+				"title": "",
+				"options": [...],
+				"type": type,
+				"details": ""
+			},
+		},
+		"types": type,
+		"answer": {
+			"1": {
+				"answer": [0], //不定义正确答案
+				"addanswer": "",
+				"is_obj": 1
+			},
+			"2": {
+				"answer": [0],
+				"addanswer": "",
+				"is_obj": 1
+			},
+		},
+		"details": "",
+		"id": ""
+	}
+]
+
+// 阅读理解
+[
+	{
+		"title": "XXXXXXXXXXXX",
+		"sm_topic": {
+			"1": {
+				"title": "<p>1���</p>",
+				"options": [...],
+				"type": type,
+				"details": ""
+			},
+			"2": {
+				"title": "<p>1���</p>",
+				"options": [...],
+				"type": type,
+				"details": ""
+			},
+		},
+		"types": type,
+		"answer": {
+			"1": {
+				"answer": [0], //不定义正确答案
+				"addanswer": "",
+				"is_obj": 1
+			},
+			"2": {
+				"answer": [0],
+				"addanswer": "",
+				"is_obj": 1
+			},
+		},
+		"details": "",
+		"id": ""
+	},...
+]
+
+
+
