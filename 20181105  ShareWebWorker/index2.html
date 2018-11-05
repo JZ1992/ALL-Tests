@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>index2</title>
+</head>
+
+<body>
+    <style>
+        .main {
+            border: 6px solid red;
+        }
+    </style>
+    <div class="main">
+        <br>
+        <button id="addS">添加share</button>
+        index2主页面边框红色
+        <input type="text" id="content" style="color:red;font-weight:bold;">
+        <br>
+        <br>
+    </div>
+    <script>
+        window.mainS = new SharedWorker('share.js', 'zm'), inputS = document.querySelector('#content');
+        mainS.port.onmessage = function (e) {
+            inputS.value = e.data;
+        }
+        inputS.onchange = function () {
+            mainS.port.postMessage(inputS.value);
+        }
+        mainS.port.postMessage('get');
+        //添加SharedWorker
+        var obj = {}, count = 0;
+        document.querySelector('#addS').addEventListener('click', function () {
+            count++;
+            obj[count] = new SharedWorker('share.js', 'zm');
+            obj[count].port.onmessage = function (e) {
+                console.log('index2[' + count + ']输出：' + e.data);
+            }
+            obj[count].port.postMessage('GetPortsLength');
+        })
+    </script>
+</body>
+
+</html>

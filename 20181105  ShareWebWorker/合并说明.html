@@ -1,0 +1,81 @@
+<!-- index1.html -->
+<style>
+    .main {
+        border: 6px solid red;
+    }
+</style>
+<div class="main">
+    <a href="./index2.html" target="_blank">index2</a>
+    <br> 主页面边框红色
+    <input type="text" id="content" style="color:red;font-weight:bold;">
+    <br>
+    <br>
+</div>
+<script>
+    window.mainS = new SharedWorker('share.js', 'zm'), inputS = document.querySelector('#content');
+    mainS.port.onmessage = function (e) {
+        inputS.value = e.data;
+        console.log(e.data);
+    }
+    inputS.onchange = function () {
+        mainS.port.postMessage(inputS.value);
+    }
+    mainS.port.postMessage('主页面的信息');
+</script>
+
+
+<!-- index2.html -->
+<style>
+    .main {
+        border: 6px solid red;
+    }
+</style>
+<div class="main">
+    <br>
+    <button id="addS">添加share</button>
+    index2主页面边框红色
+    <input type="text" id="content" style="color:red;font-weight:bold;">
+    <br>
+    <br>
+</div>
+<script>
+    window.mainS = new SharedWorker('share.js', 'zm'), inputS = document.querySelector('#content');
+    mainS.port.onmessage = function (e) {
+        inputS.value = e.data;
+    }
+    inputS.onchange = function () {
+        mainS.port.postMessage(inputS.value);
+    }
+    mainS.port.postMessage('get');
+    //添加SharedWorker
+    var obj = {}, count = 0;
+    document.querySelector('#addS').addEventListener('click', function () {
+        count++;
+        obj[count] = new SharedWorker('share.js', 'zm');
+        obj[count].port.onmessage = function (e) {
+            console.log('index2[' + count + ']输出：' + e.data);
+        }
+        obj[count].port.postMessage('get');
+    })
+</script>
+
+
+<!-- share.js -->
+<script>
+    var allPorts = [];
+    onconnect = function (e) {
+        //****重点*****
+        //记录每一个链接端口，在之后恰当时机分发信息
+        var port = e.ports[0], _data;
+        allPorts.push(port);
+        port.onmessage = function (me) {
+            // var _content = mes.data;
+            var mes =  me.data === 'GetPortsLength' ? allPorts.length : me.data;
+            //所有端口分发信息[这里包含本身]
+            allPorts.forEach(function (p) {
+                p.postMessage(mes);
+            });
+        };
+        port.start();
+    };
+</script>
