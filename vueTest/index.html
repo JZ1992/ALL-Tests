@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vue.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='App'>
+        <div>age.value:{{age.value}}</div>
+        <form action="">
+            <input type="text" v-model='age.value' />
+            <button @click='reset'>重置</button>
+        </form>
+
+    </div>
+    <script>
+        new Vue({
+            el: "#App",
+            data: {
+                age: {
+                    value: 16
+                },
+            },
+            mounted: function () {
+                var that = this;
+                // that.$set(that.age, 'value', 999);
+            },
+            methods: {
+                reset: function () {
+                    debugger;
+                    // this.$set(this.age, 'value', 999);
+                    Object.assign(this.age, { value: 'zhouman' });
+                    console.log(this.age);
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

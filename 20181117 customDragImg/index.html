@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        div {
+            width: 300px;
+            height: 150px;
+            margin: 0 auto;
+            border-width: 2px;
+            border-style: solid;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        .start {
+            background-color: red;
+        }
+
+        .end {
+            background-color: blue;
+        }
+    </style>
+    <div class="end">终点</div>
+    <div class="start" draggable="true">起点</div>
+    <br>
+
+    <div class="moveImg">
+        <img src="./move.png" alt="">
+    </div>
+
+    <script>
+        // debugger;
+        var node_start = document.querySelector('.start'),
+            node_end = document.querySelector('.end');
+
+        // 移动图片
+        var moveImg = new Image();
+        moveImg.src = './move.png';
+
+
+        node_start.addEventListener('dragstart', function () {
+            console.log('start 1');
+            // this.style.opacity = 0.5;
+        });
+        node_start.addEventListener('drag', function (e) {
+            // console.log('start move');
+            // e.dataTransfer.effectAllowed = 'move';
+            // e.dataTransfer.setDragImage(document.querySelector('.moveImg'), -10, -10);
+
+            var dragIcon = document.createElement('img');
+            dragIcon.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABlBMVEUAAAD///+l2Z/dAAAAM0lEQVR4nGP4/5/h/1+G/58ZDrAz3D/McH8yw83NDDeNGe4Ug9C9zwz3gVLMDA/A6P9/AFGGFyjOXZtQAAAAAElFTkSuQmCC';
+            var width = 100;
+            var height = width * (3 / 4); // The height must be set explicitly. I'm assuming the image is 4:3 for this example
+            var c = document.createElement("canvas");
+            c.width = width;
+            c.height = height;
+            var ctx = c.getContext('2d');
+            ctx.drawImage(dragIcon, 0, 0, width, height);
+            dragIcon.src = c.toDataURL();
+            e.dataTransfer.setDragImage(dragIcon, -10, -10);
+
+            // var dragIcon = document.createElement('img');
+            // dragIcon.src = './move.png';
+            // dragIcon.width = '100';
+            // var div = document.createElement('div');
+            // div.appendChild(dragIcon);
+            // document.querySelector('body').appendChild(div);
+            // e.dataTransfer.setDragImage(div, -10, -10);
+
+        });
+        node_start.addEventListener('dragend', function () {
+            console.log('start end');
+        });
+
+        node_end.addEventListener('dragenter', function () {
+            console.log('end enter');
+        });
+        node_end.addEventListener('dragleave', function () {
+            console.log('end leave');
+        });
+        node_end.addEventListener('dragover', function (e) {
+            console.log('end over');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+
+</html>
