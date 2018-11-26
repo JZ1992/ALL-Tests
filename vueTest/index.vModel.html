@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vue.js"></script>
+    <title>自定义组件 使用  v-model </title>
+</head>
+
+<body>
+    <div id='App'>
+        {{name}}
+        <hr><hr><hr>
+        <test-model v-model='name'>
+        </test-model>
+    </div>
+    <script>
+        document.designMode = 'on';
+        Vue.component('test-model', {
+            model: {
+                prop: 'zmtest',
+                event: 'eventName'
+            },
+            props: ['zmtest'],
+            template: `           
+             <div style="padding:50px;border:1px solid red;">
+                   <input type="text" :value='zmtest' @input="$emit('eventName', $event.target.value)">
+            </div>`
+        })
+        new Vue({
+            el: "#App",
+            data: {
+                name: 'zm'
+            }
+        })
+    </script>
+</body>
+
+</html>
