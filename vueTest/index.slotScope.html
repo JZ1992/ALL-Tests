@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="vue.js"></script>
+    <title>插槽作用域</title>
+</head>
+
+<body>
+    <div id='App'>
+        <test-slot-scope :name="name">
+            <next-comp></next-comp>
+        </test-slot-scope>
+    </div>
+    <script>
+
+        Vue.component('test-slot-scope', {
+            props: ['name'],
+            computed: {
+                newName: function () {
+                    return this.name + '--->son'
+                }
+            },
+            template: `
+            <div>
+                <slot></slot>
+                <br>
+                <input type="text" :value="newName">
+                sfd
+            </div>
+        `
+        });
+        Vue.component('next-comp', {
+            template: `<div>last! dom!</div>`
+        });
+        new Vue({
+            el: "#App",
+            data: {
+                name: 'father'
+            }
+        })
+
+    </script>
+</body>
+
+</html>
