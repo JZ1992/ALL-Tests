@@ -118,7 +118,7 @@ module.exports = {
             filename: 'css/index.css'    //文件目录会放入output.path里
         }),
         new webpack.ProvidePlugin({ //它是一个插件，所以需要按插件的用法new一个
-            $:'jquery', //接收名字:模块名
+            $: 'jquery', //接收名字:模块名
         }),
     ],
     devServer: {
@@ -137,27 +137,32 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, "css-loader"]  //代替style-loader
             },
             {
-                test:/\.scss$/,
-                use:[
+                test: /\.scss$/,
+                use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
                     "sass-loader"
                 ]
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader"
             }
         ]
     },
 
-    optimization:{  //优化
-        splitChunks:{
-            cacheGroups:{//缓存组，一个对象。它的作用在于，可以对不同的文件做不同的处理
-                commonjs:{
-                    name:'vender',      //输出的名字（提出来的第三方库）
-                    test: /\.js/,       //通过条件找到要提取的文件
-                    chunks:'initial'    //只对入口文件进行处理
-                }
-            }
-        }
-    }
+    // optimization: {  //优化
+    //     splitChunks: {
+    //         cacheGroups: {//缓存组，一个对象。它的作用在于，可以对不同的文件做不同的处理
+    //             commonjs: {
+    //                 name: 'vender',      //输出的名字（提出来的第三方库）
+    //                 test: /\.js/,       //通过条件找到要提取的文件
+    //                 chunks: 'initial'    //只对入口文件进行处理
+    //             }
+    //         }
+    //     }
+    // }
 
 
 };
